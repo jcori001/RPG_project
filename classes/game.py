@@ -39,13 +39,13 @@ class Unit:
 
     def generate_damage(self):
         crit_mod = 1
-        if random.randrange(1,101) <= round((100 - self.maxspd)/4, 0):
+        if random.randrange(1,101) <= round((100 - self.maxspd)/2, 0):
             crit_mod = 2
             print(bcolors.FAIL + bcolors.BOLD + '\nCRITICAL!' + bcolors.ENDC)
         low = round(self.atk*0.95*crit_mod, 0)
         high = round(self.atk*1.05*crit_mod, 0)
         return random.randrange(low, high)
-        
+
     def take_damage(self, dmg):
         self.hp -= dmg
         if self.hp < 0:
