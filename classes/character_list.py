@@ -6,7 +6,7 @@ from classes.inventory import *
 # Instantiate Magic lists
 bm_trio_1 = [fire_1, thunder_1, blizzard_1]
 heal = [cure_1, cure_2] # + revive?
-player_inv = [{"item": potion, "quantity": 5}, {"item": elixir, "quantity": 1}, {"item": grenade, "quantity": 3}, {"item": h_bomb, "quantity": 1}]
+player_inv = [{"item": potion, "quantity": 5}, {"item": hipotion, "quantity": 2}, {"item": elixir, "quantity": 1}, {"item": grenade, "quantity": 3}, {"item": big_one, "quantity": 1}]
 enemy_spells = [fire_1, meteor, cure_1]
 
 
@@ -32,7 +32,7 @@ fighter = Unit(
 
 enemy1 = Unit(
     "Boss", 
-     7000, 300, 400, 125, 
+     4500, 300, 400, 125, 
      [chaos, cure_2], [])
 enemy2 = Unit(
     "mini boss", 
