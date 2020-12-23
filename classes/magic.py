@@ -30,19 +30,19 @@ class Magic:
 
 fire_1 = Magic(
     "Fire", 
-    30, 250, 5, 0, 
+    30, 300, 5, 0, 
     "dmg")
 thunder_1 = Magic(
     "Thunder", 
-    30, 225, 33, 0, 
+    30, 250, 40, 0, 
     "dmg")
 blizzard_1 = Magic(
     "Blizzard", 
-    30, 200, 2.5, 25, 
+    30, 250, 2.5, 25, 
     "dmg")
 chaos = Magic(
     "Chaos", 
-    70, 550, 0, 0, 
+    70, 750, 0, 0, 
     "dmg")
 
 quake = Magic(
